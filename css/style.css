@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: papayawhip;
+}
+
+.navbar{
+    /* background-color: none; */
+    height: 5em;
+}
+.text-center{
+    margin-top: 6px;
+    color: rgb(7, 7, 110);
+    font-size: 28px;
+    font-family: fantasy;
+}
+.d-flex{
+    /* float: right; */
+    /* margin-right: 0; */
+    margin-left: 20%;
+}
+
+.logo{
+    height: 100%;
+}
+img{
+    max-height: 150%;
+    max-width: 150%;
+    /* margin-left: 8%; */
+    /* margin-top: 11px; */
+}
+/* #quotes{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(7, 7, 110);
+    margin-left: 30%;
+    margin-top: 50px;
+} */
+
+/* .myMargin{
+    margin-top: 30px;
+    margin-left: 150px;
+} */
+
+.loginForm{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.signupForm{
+    margin: 100px;
+}
+
+.form-text{
+    color: red;
+   
+    font-size: 13px;
+}
+#redd{
+    color: red;
+}
+
