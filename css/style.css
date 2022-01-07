@@ -63,3 +63,20 @@ img{
     color: red;
 }
 
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+.footer1{
+
+    background-color: rgb(52, 196, 117);
+    color: #fff;
+    text-align: center;
+    height: 4.5em;
+    margin-top: 2px;
+}
