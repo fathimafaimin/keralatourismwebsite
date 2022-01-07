@@ -23,14 +23,15 @@ body{
     margin-left: 20%;
 }
 
-.logo{
-    height: 90%;
-}
+
 img{
-    max-height: 130%;
-    max-width: 130%;
+    max-height: 100%;
+    max-width: 100%;
     /* margin-left: 8%; */
     /* margin-top: 11px; */
+}
+.logo{
+    height: 10%;
 }
 /* #quotes{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
