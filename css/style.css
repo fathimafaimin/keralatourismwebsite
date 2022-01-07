@@ -80,3 +80,14 @@ img{
     height: 4.5em;
     margin-top: 2px;
 }
+
+.card-body{
+    /* border: 3px solid white; */
+    /* width: 21%; */
+    /* float: left; */
+    /* margin-left: 10px; */
+    padding: 10px;
+    /* height: 16em; */
+    /* background-color: rgb(143, 148, 155); */
+
+}
