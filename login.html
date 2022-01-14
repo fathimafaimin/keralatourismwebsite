@@ -77,28 +77,31 @@
     <!-- Login Form -->
     <div class="col-lg-5 loginForm">
 
-        <form >
+        <form action="./index.html" onsubmit="return validate()">
             <div class="mb-3">
             <label for="email" >Email address</label>
             <input type="text" class="form-control" id="email" aria-describedby="emailHelp">
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            <!-- <label for="error" id="errorMail"></label>   -->
+            <label for="error" id="errorMail"></label>  
             </div>
+
             <div class="mb-3">
             <label for="password" class="form-label">Password</label>
             <input type="password" class="form-control" id="pwd">
-            <!-- <label for="error" id="errorPwd"></label> -->
+            <label for="error" id="errorPwd"></label>
             </div>
+
             <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Remember me</label>
             </div>
+            
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Forgot Password?</label>
             </div>
-            <button type="submit" class="btn btn-primary submit" onclick="clearFunc()">Reset</button>
-            <button type="submit" class="btn btn-primary submit" onclick="return validate()">LogIn</button>
+            <!-- <button type="submit" class="btn btn-primary submit" onclick="clearFunc()">Reset</button> -->
+            <button type="submit" class="btn btn-primary submit">LogIn</button>
 
         </form>
     </div>
