@@ -32,27 +32,35 @@ function validate()
     {
         errorMail.innerHTML = "Invalid";
         errorMail.style.color = "red";
-        // errorPwd.innerHTML = "Invalid";
-        // errorPwd.style.color = "red";
-
-
         return false;
 
 
     }
+    
 }
-    // else if(pwd=="")
-    // {
-    //     errorPwd.innerHTML = "**Please fill the password";
-    //     errorPwd.style.color = "red";
-    //     return false;
+ function login(){
 
-    // }
-    // else if(pwd.length<8){
-    //     errorPwd.innerHTML = "**Password length must be atleast 8";
-    //     errorPwd.style.color = "red";
-    //     return false;
-    // }
+    if(pwd==""){
+        errorPwd.innerHTML = "**Please fill the password";
+        errorPwd.style.color = "red";
+        return false;
+
+    }
+    else if(pwd.length<8){
+        errorPwd.innerHTML = "**Password length must be atleast 8";
+        errorPwd.style.color = "red";
+        return false;
+    }
+    else{
+        errorPwd.innerHTML = "valid";
+        errorPwd.style.color = "green";
+        return true;
+
+    }
+
+ }   
+
+    
     
     // else if(regexp.test(email.value)){
     //     errorMail.innerText = "Valid";
