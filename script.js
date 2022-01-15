@@ -18,10 +18,10 @@ function validate()
         // errorPwd.style.color = "green";
         return true;
     }
-    else if(pwd!=="")
+    else if(pwd=="")
     {
         // if(pwd.length<5||pwd.length>16){
-            errorPwd.innerHTML = "**Please fill the password";
+        errorPwd.innerHTML = "**Please fill the password";
         errorPwd.style.color = "red";
         // alert("**Please fill the password");
         return false;
