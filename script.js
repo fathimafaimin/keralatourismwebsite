@@ -18,25 +18,22 @@ function validate()
         // errorPwd.style.color = "green";
         return true;
     }
-    // else if(pwd!=="")
-    // {
-    //     if(pwd.length<5||pwd.length>16){
-    //         errorPwd.innerHTML = "**Please fill the password";
-    //     errorPwd.style.color = "red";
-    //     // alert("**Please fill the password");
-    //     return false;
-
-    //     }
-        
-    // }
-   
+    else if(pwd!=="")
+    {
+        // if(pwd.length<5||pwd.length>16){
+            errorPwd.innerHTML = "**Please fill the password";
+        errorPwd.style.color = "red";
+        // alert("**Please fill the password");
+        return false;
+        // }
+    }
     
     else
     {
         errorMail.innerHTML = "Invalid";
         errorMail.style.color = "red";
-        errorPwd.innerHTML = "Invalid";
-        errorPwd.style.color = "red";
+        // errorPwd.innerHTML = "Invalid";
+        // errorPwd.style.color = "red";
 
 
         return false;
