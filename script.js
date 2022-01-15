@@ -14,21 +14,21 @@ function validate()
         errorMail.innerText = 'Valid';
 
         errorMail.style.color = "green";
-        errorPwd.innerHTML = "valid";
-        errorPwd.style.color = "green";
+        // errorPwd.innerHTML = "valid";
+        // errorPwd.style.color = "green";
         return true;
     }
-    else if(pwd!=="")
-    {
-        if(pwd.length<5||pwd.length>16){
-            errorPwd.innerHTML = "**Please fill the password";
-        errorPwd.style.color = "red";
-        // alert("**Please fill the password");
-        return false;
+    // else if(pwd!=="")
+    // {
+    //     if(pwd.length<5||pwd.length>16){
+    //         errorPwd.innerHTML = "**Please fill the password";
+    //     errorPwd.style.color = "red";
+    //     // alert("**Please fill the password");
+    //     return false;
 
-        }
+    //     }
         
-    }
+    // }
    
     
     else
