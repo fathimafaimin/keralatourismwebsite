@@ -7,7 +7,8 @@ let errorPwd = document.getElementById("errorPwd");
 
 function validate()
 {
-    let regexp = /^([\w\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3})?$/
+    let regexp = /^([\w\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3})?$/n  
+    
     
     if((regexp.test(email.value))||(pwd.length>6))
     {
