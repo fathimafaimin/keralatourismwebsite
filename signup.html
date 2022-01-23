@@ -12,7 +12,7 @@
 </head>
 
 
-<body class="contain" background="./images/background.jpg">
+<body background="./images/background.jpg">
     <!-- Navbar -->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -73,32 +73,42 @@
     <div class="signupForm">
 
         <!-- <div class="col-lg-4"></div> -->
-        <p class="lead">Get started with your account</p>
+        <p class="signText"> Get started with your account</p>
         <!-- FORM -->
-        <div class="col-lg-9">
-            <form>
+        <div class="col-lg-12">
+            <form onsubmit="return signupValidation()" >
                 <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address <sup id="redd">*</sup></label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    <label for="exampleInputEmail1" class="form-label">Email address </label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="username@example.com">
+                    <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
                 </div>
-                <!-- <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-                </div> -->
+                <div class="row mb-3">
+
+                    <div class="col">
+                            <label for="fristName" class="form-label">First Name </label>
+                            <input type="text" class="form-control" id="fristName">
+                    
+                    </div>
+
+                    <div class="col">
+                        <label for="lastName" class="form-label">Last Name </label>
+                        <input type="text" class="form-control" id="lastName">
+                    </div>
+
+                </div>
                 <div>
-                  <label for="inputPassword5" class="form-label">Password<sup id="redd">*</sup></label>
+                    <label for="inputPhoneNumber" class="form-label">Phone Number</label>
+                    <input type="phonenumber" id="inputPhoneNumber" class="form-control" aria-describedby="phonenumberHelpBlock" placeholder="XXX-XXX-XXXX, XXX.XXX.XXXX, XXX XXX XXXX">
+                <div>
+                  <label for="inputPassword5" class="form-label">Password</label>
                   <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-                  <div id="passwordHelpBlock" class="form-text">
+                  <!-- <div id="passwordHelpBlock" class="form-text">
                     Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
-                </div>
-                <br>
-                <!-- <div class="mb-3">
-                    <label for="exampleInputPassword5" class="form-label">Confirm Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword5">
                 </div> -->
+                <br>
+
                 <div>
-                  <label for="inputPassword5" class="form-label">Confirm<sup id="redd">*</sup></label>
+                  <label for="inputPassword5" class="form-label">Confirm</label>
                   <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
                   <div id="passwordHelpBlock" class="form-text">
                     Re-enter the password
@@ -108,8 +118,17 @@
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
                   <label class="form-check-label" for="exampleCheck1">Remember me</label>
                 </div>
-                <p id="redd">* Required Field</p>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="mb-3">
+                    <tr>
+                        <td>
+                            <a href="./login.html" class="refLink">Sign in instead</a>
+                        </td>
+                        <td>
+                            <button type="submit" class="btn btn-primary submit signupButton" >SignUp</button>
+                        </td>
+                    </tr>
+                </div>
+                
             </form>
         </div>
         <!-- /FORM -->
